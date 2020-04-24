@@ -13,7 +13,7 @@ export class AppComponent {
     var selectFile = event.target.files;
 
     for (let i = 0; i < selectFile.length; i++) {
-      this.result += "File name : "+selectFile[i].name+" <br>";
+      this.result += "<br> File name : "+selectFile[i].name;
     }
   }
 }
