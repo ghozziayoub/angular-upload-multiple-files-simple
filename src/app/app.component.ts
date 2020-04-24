@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'upload-multiple';
+  result: string = "";
+
+  save(event){
+    var selectFile = event.target.files;
+
+    for (let i = 0; i < selectFile.length; i++) {
+      this.result += "File name : "+selectFile[i].name+" <br>";
+    }
+  }
 }
